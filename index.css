@@ -1,0 +1,466 @@
+
+
+
+
+#content{ height: 100%; width: 100%; }
+
+#header{
+    display: flex;
+    gap: 15px;
+    padding: 15px 25px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    box-shadow: 0px 1px 5px 1px rgb(222 222 222);
+    background-color: white;
+    z-index: 2;
+}
+
+#header img {
+    height: 40px;
+}
+
+.contenu{
+    /* margin-top: 120px; */
+    /* margin-top: 120px; */
+    height: 100%; width: 100%; overflow-y: scroll;
+    padding: 50px 0;
+    padding-top: 85px;
+    
+}
+
+.contenu::-webkit-scrollbar {display: none;}
+
+
+#content .filters_bar{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.filters_bar .filter {
+    padding: 10px 15px;
+    background-color: #f7f7f7;
+    color: #afb1b4;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+
+.filter.active{
+    background: #f8e8ce;
+    color:#f2a85d;
+    font-weight: 600;
+}
+
+
+.collection{ padding: 20px;}
+
+/* .collection .collection-header{} */
+
+.collection-header.normal-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.collection .collection-header .title{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.collection .collection-header .subtitle{
+    color: #afb1b4;
+    font-size: 16px;
+}
+
+.collection .models{
+    /* width: 100%; */
+    margin-top: 10px;
+    overflow-x: hidden;
+    display: flex;
+    gap: 20px;
+}
+
+.models .model{
+    border-radius: 10px;
+    position: relative;
+    width: 45vw;
+    /* height: 80%; */
+}
+
+
+.model .model-image{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+.model .heart{
+    position: absolute;
+    z-index: 1;   
+    right: 5%;
+    top: 5%;
+}
+
+.heart img{ height: 30px; width: 30px; }
+
+.model .model-info{ display: flex; justify-content: space-between; }
+
+
+
+#nav_bar{
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    background: rgb(8, 0, 27);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    z-index: 1;
+    box-shadow: 0px -2px 10px 1px rgba(171,171,171,1);
+}
+
+#nav_bar .nav_item{
+    width: 100%;
+}
+
+.nav_item img{
+    height: 30px;
+}
+
+
+/* //////////////////////////////////////////////////////////
+//////////////           interface 2           /////////////
+//////////////////////////////////////////////////////////*/
+
+
+
+.cercle_white{
+    background: white;
+    border-radius: 100px;
+    box-shadow: 0px 0px 5px gray;
+    padding: 5px;
+}
+
+#select{
+    border-radius: 30px 30px 0px 0px;
+    background: white;
+    display: grid;
+    gap: 5px;
+    position: fixed;
+    bottom: 0px;
+    padding-bottom: 20px;
+}
+
+
+#product-page{ height: 100% ;width: 100% ; line-height: 20px;}
+
+.model-preview{ position: relative; width: 100vw;}
+
+
+.header_icon {
+    position: absolute;
+    width: 100%;
+    padding: 0 5%;
+    top: 20px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_icon img, .ajouter_favorie img{ height: 50px; }
+/** @TODO: replace with swiper*/
+
+.model-photos{ display: flex; overflow-x: scroll;}
+
+.header_img{height: 60vh; width: 100vw; object-fit: cover;}
+
+
+.cercle_dots{
+    display: flex;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: absolute;
+    z-index: 1;
+    bottom: 70px;
+    left: 40%;
+}
+
+.ajouter_favorie{
+    position: absolute;
+    bottom: 60px;
+    right: 5%;
+}
+
+.cercle_dot{
+    background: white ;
+    border-radius: 100px;
+    padding: 7px
+}
+
+
+
+
+.cercle{
+    border-radius: 100px;
+    box-shadow: 0px 0px 0px 2px white; 
+}
+
+.cercle.active{padding: 5px;}
+
+.choose{
+    display: grid;
+    grid-template-columns: 200px 40px;
+    justify-content: space-between;
+}
+
+.taille{
+    border-radius: 10px;
+    color: gray;
+    box-shadow: 0px 0px 5px ;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 18px;
+}
+
+.taille.active{ background: rgba(252, 168, 100, 0.295);color: orange;font-weight: bold;}
+
+.color-picker{ box-shadow: 0px 0px 3px; border-radius: 20px; }
+
+.color_option{
+    border-radius: 50%;
+    border: 1px solid transparent;
+    padding:  3px ;
+}
+
+.selected_color{
+    border: 1px solid black;
+    padding: 3px ;
+}
+
+
+.color_option > div{
+    border-radius: 50%;
+    padding: 7px;
+    /* display: inline-block; */
+}
+
+.color_black{ background: black;}
+
+.color_gray{ background: gray;}
+
+.color_green{ background: darkgreen;}
+
+
+
+.detail{
+    border-bottom: 2px solid rgb(192, 53, 2);
+    padding: 5px 10px;
+    color: rgb(209, 56, 0);
+}
+
+.add_card img{
+    height: 40px;
+    
+}
+.add_card{
+    background: darkorange;
+    border-radius: 15px;
+    padding: 5px 0px;
+    
+}
+
+
+.card_information{
+    display: grid;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+/* //////////////////////////////////////////////////////////
+//////////////           interface 3           /////////////
+//////////////////////////////////////////////////////////*/
+
+#body::-webkit-scrollbar{display: none;}
+
+#panier{height: 100%; width: 100%; background: rgb(241, 241, 241); z-index: 4}
+
+#panier::-webkit-scrollbar{display: none;}
+.header_cart{width: 100%; padding: 20px; display : flex; justify-content: space-between;
+     position: fixed;  background:linear-gradient(rgb(228, 228, 228) ,transparent);}
+
+.retoure img{ height: 45px; }
+
+.favorie img{height: 50px;}
+.cart-content::-webkit-scrollbar{display: none;}
+.cart-content{
+    padding: 0px 15px;
+    height: 66%;
+    padding-top: 80px;
+    width: 100%;
+   
+    
+    
+    overflow-y: scroll; 
+}
+
+.card{
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.13);
+    max-height: 183px;
+    
+}
+.card img{height: 40px;}
+
+
+.cloth_select img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+
+.save_later{
+    border-bottom: 2px solid rgb(192, 53, 2);
+    color: rgb(209, 56, 0);
+    display: inline-block;
+    font-size: 14px;
+}
+
+/* img{height: 40px;} */
+
+
+.prices{
+    background: white;
+    border-radius: 25px 25px 0px 0px;
+    box-shadow: 0px 0px 25px 10px rgba(211, 211, 211, 0.719);
+}
+
+
+
+.cart-info{
+    bottom: 0;
+    position: fixed;
+    width: 100vw;
+    padding-bottom: 60px;
+}
+
+.button_payment{
+    
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    gap: 15px;
+}
+
+.border_bottom{
+    border-bottom: 2px solid lightgray;
+}
+
+
+.show_notif{
+    position: relative;
+}
+.notif{
+    background: rgb(255, 184, 52);
+    border-radius: 10px;
+    padding: 6px;
+    box-shadow: 0px 0px 0px 3px rgb(219, 219, 219);
+    display: inline-block;
+    position: absolute;
+    right:  23px;
+    top: 0px;
+    display: none;
+}
+
+.notif.active{
+    display: grid;
+}
+
+
+
+#film{
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.274);
+    position: fixed;
+    top: 0;
+    display: none;
+    transition: all 300ms ease-in-out;
+}
+
+#choose_payment{
+    position: fixed;
+    width: 100vw;
+    bottom: -45vh;
+    background: #0b1423;
+    display: grid;
+    gap: 15px;
+    padding: 10px 20px;
+    border-radius: 25px 25px 0 0 ;
+    box-shadow: 0px -2px 10px 1px rgba(171,171,171,1);
+    z-index: 6;
+    transition: all 200ms ease-in;
+}
+
+#choose_payment.active{
+    bottom: 0;
+}
+
+.card_payment{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* padding: 5px; */
+
+}
+
+.card_payment img:not(.check_icon) {
+    width: 60px;
+}
+
+.card_payment .card-type{
+    color: #afb1b4;
+    font-size: 15px;
+}
+
+.card_payment .account-name{
+    font-weight: 600;
+}
+
+
+
+#add-account{
+    background: #3b4a62;
+    color: rgba(255, 255, 255, 0.774);
+    justify-content: center;
+    gap: 15px;
+    padding: 5px;
+}
+
+
+#add-account .plus-icon{
+    font-size: 36px;
+}
+
+#pay-btn{
+    margin-top: 25px;
+    background: #ec981a;
+    /* color: rgba(255, 255, 255, 0.774); */
+    font-weight: 600;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    padding: 10px;
+}
+
+#pay-btn .swipe-icon img{
+    width: 40px;
+}
